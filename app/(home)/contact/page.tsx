@@ -26,7 +26,7 @@ I sent personal updates to my friends and family, you can get a copy of my notes
 - YouTube: [@dataindependent](https://www.youtube.com/@dataindependent)
 `;
 
-export default function HomePage() {
+export default function MediaPage() {
     return (
         <main className="mx-auto flex size-full max-w-container flex-row items-center gap-6 px-4 py-8">
             <DocsBody>

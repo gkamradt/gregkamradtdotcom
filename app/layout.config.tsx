@@ -9,12 +9,27 @@ import { type HomeLayoutProps } from 'fumadocs-ui/home-layout';
  */
 export const baseOptions: HomeLayoutProps = {
   nav: {
-    title: 'My App',
+    title: 'Greg Kamradt',
   },
   links: [
     {
-      text: 'Documentation',
-      url: '/docs',
+      text: 'Projects',
+      url: '/projects',
+      active: 'nested-url',
+    },
+    {
+      text: 'Media',
+      url: '/media',
+      active: 'nested-url',
+    },
+    {
+      text: 'Blog',
+      url: '/blog',
+      active: 'nested-url',
+    },
+    {
+      text: 'Contact',
+      url: '/contact',
       active: 'nested-url',
     },
   ],

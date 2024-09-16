@@ -4,7 +4,7 @@ import defaultMdxComponents from "fumadocs-ui/mdx";
 import { DocsBody, DocsPage } from "fumadocs-ui/page";
 
 const content = `
-# Greg Kamradt
+# Media 2
 Founder @ [Leverage](https://leverage.to) - an AI Product & Education Studio.
 
 I have been working on a series of products, investments, clients, and operating with technology companies.
@@ -26,7 +26,7 @@ I sent personal updates to my friends and family, you can get a copy of my notes
 - YouTube: [@dataindependent](https://www.youtube.com/@dataindependent)
 `;
 
-export default function HomePage() {
+export default function MediaPage() {
     return (
         <main className="mx-auto flex size-full max-w-container flex-row items-center gap-6 px-4 py-8">
             <DocsBody>
