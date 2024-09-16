@@ -23,8 +23,8 @@ export const baseOptions: HomeLayoutProps = {
       active: 'nested-url',
     },
     {
-      text: 'Blog',
-      url: '/blog',
+      text: 'Writing',
+      url: '/writing',
       active: 'nested-url',
     },
     {
