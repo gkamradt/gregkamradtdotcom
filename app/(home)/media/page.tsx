@@ -4,7 +4,7 @@ import defaultMdxComponents from "fumadocs-ui/mdx";
 import { DocsBody, DocsPage } from "fumadocs-ui/page";
 
 const content = `
-# Media 2
+# Media
 A collection of media I've either authored or been a part of.
 
 **Content:**
