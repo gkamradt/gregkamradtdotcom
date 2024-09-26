@@ -20,6 +20,7 @@ export default function Page({
   const page = writing.getPage([params.slug]);
 
   if (!page) notFound();
+  if (page.data.display === false) notFound();
 
   return (
     <>

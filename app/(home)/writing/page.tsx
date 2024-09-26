@@ -2,7 +2,9 @@ import Link from 'next/link';
 import { writing } from '@/app/source';
 
 export default function Page(): React.ReactElement {
-  const posts = [...writing.getPages()].sort(
+  const posts = [...writing.getPages()]
+  .filter((post) => post.data.display !== false)
+  .sort(
     (a, b) =>
       new Date(b.data.date ?? b.file.name).getTime() -
       new Date(a.data.date ?? a.file.name).getTime(),
@@ -23,7 +25,7 @@ export default function Page(): React.ReactElement {
   return (
     <main className="container max-sm:px-0 md:py-12">
       <div
-        className="h-[300px] p-8 md:h-[400px] md:p-12"
+        className="h-[200px] p-8 md:h-[300px] md:p-12"
         style={{
           backgroundImage: [
             'radial-gradient(circle at 70% 10%, rgba(255,50,100,0.5), transparent)',
