@@ -85,7 +85,7 @@ export function generateMetadata({ params }: { params: Param }): Metadata {
         title: page.data.title,
         description:
             page.data.description ??
-            "The library for building documentation sites",
+            "Greg Kamradt's writing",
     });
 }
 
