@@ -49,7 +49,7 @@ export default function Page({
       </div>
       <article className="container grid grid-cols-1 px-0 py-8 lg:grid-cols-[2fr_1fr] lg:px-4">
         <div className="prose p-4">
-          <InlineTOC items={page.data.toc} />
+          {/* <InlineTOC items={page.data.toc} /> */}
           <page.data.body components={defaultMdxComponents} />
         </div>
         <div className="flex flex-col gap-4 border-l p-4 text-sm">

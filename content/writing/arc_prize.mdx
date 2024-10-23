@@ -1,0 +1,125 @@
+---
+title: ARC Prize
+author: Greg Kamradt
+date: 2024-10-21
+display: true
+---
+
+# How the cofounder of Zapier recruited me to run a $1M AI competition
+
+"We gotta blow this up."
+
+That's what [Mike Knoop](https://x.com/mikeknoop) (co-founder of [Zapier](https://zapier.com)) says to me in early 2024.
+
+"ARC-AGI, we gotta make it huge. It's too important."
+
+"Wait, ARC? What are you talking about?" I quickly reply.
+
+"It's the most important benchmark and unsolved problem in AI, its solution will change the world."
+
+Before I knew it, I was on a squad of 4 people traveling to the top AI programs in the world, running a $1M competition, and finding out why current benchmarks *are* inadequate to lead us towards AGI.
+
+![ARC Prize Team](public/images/arcgroup.jpeg)
+_From left to right:  [Greg Kamradt](https://x.com/GregKamradt), [Mike Knoop](https://x.com/mikeknoop), [Francois Chollet](https://x.com/fchollet), [Bryan Landers](https://x.com/bryanlanders) at a16z NY_ 
+
+Let's take a step back.
+
+## Meeting Mike
+
+I saw Mike speak about [Zapier's strategy for internal AI adoption](https://youtu.be/PEOvqUT8gPY?t=1435).
+
+If you have 1,000 employees, and you want them to be "AI enabled", how would you do it? Mike had the answer.
+
+I reached out to him to see if he was up for a recorded conversation.
+
+![Mike Email](public/images/MikeEmail.png)
+
+We had a [great chat](https://www.youtube.com/watch?v=nIgqg7NS4bI). It was on of my favorite interviews. He shared how Zapier earns an extra $100K ARR per month (!) via AI. Wild.
+
+We kept in touch ever since.
+
+## Starting ARC Prize
+
+"Hey, I have a project I'm starting and need someone to help run it, interested?" - Mike DM's me one day
+
+Naturally when you hear something like that from someone like Mike you want to hear more.
+
+"I'm starting a $1M competition to solve the [ARC-AGI benchmark](https://arcprize.org/arc). [Francois](https://fchollet.com/) (creator of ARC-AGI) is on board. I need someone to help run it."
+
+"...Yes! I'm in."
+
+I couldn't pass up the opportunity to work with Mike & Francois on a small team of highly motivated, skilled, and autonomous people. He teamed me up with the amazing [Bryan Landers](https://x.com/bryanlanders) to help run the competition.
+
+The competition was modeled after the successful [Scroll Prize](https://scrollprize.org/) by [Nat Friedman](https://nat.org/) and [Daniel Gross](https://dcgross.com/). Prize money is a great incentive to spark action from people and teams who wouldn't have otherwise participated.
+
+On launch day we had Francois/Mike [featured on the Dwarkesh podcast](https://www.youtube.com/watch?v=UakqL6Pj9xo) and threw a mini launch party.
+
+![ARC Prize Launch](public/images/arc-launch-party.png)
+_ARC Prize Launch Party_
+
+## Wait, what is so important about an AI benchmark?
+
+Before we go further, let's talk about what makes this benchmark special and why it deserves a competition.
+
+Benchmarks are like tests for AI. They tell us not only _how good_ an AI system is, but what _kind_ of "good" it is.
+
+Benchmarks also serve as a _compass_ for AI research. They tell us what directions to explore. Coming up with a good benchmark is hard.
+
+ARC-AGI is an AI benchmark, but it's sort of a _meta_ benchmark.
+
+You see, it doesn't test for *skill* (how well an AI system does on any one test), but rather for skill _acquisition_. How effectively can your system learn *new* things outside of its training data?
+
+An example. The famous chess program, [Deep Blue](https://en.wikipedia.org/wiki/Deep_Blue_(chess_computer)), beat the world #1 chess player, Garry Kasparov, in 1997. So that means Deep Blue is intelligent right?
+
+Well, not exactly. It depends how you _define_ intelligence.
+
+Francois defines intelligence as, "skill-acquisition efficiency" or simply, how quickly can your system learn _new_ skills. (If you want to go deep on this definition of intelligence I can't recommend reading the first 25 pages of Francois's paper [_On The Measure Of Intelligence_](https://arxiv.org/abs/1911.01547) enough.)
+
+While Deep Blue is very good at chess, it can't play checkers, go, any other game or make me a [coffee in a random kitchen](https://www.youtube.com/watch?v=MowergwQR5Y). We'd argue by Francois's definition of intelligence that Deep Blue has high skill, but low intelligence.
+
+How do you _formally_ measure a system's ability to learn new skills? That is where ARC-AGI comes in.
+
+Because each task is unique and requires different _skills_ from other tasks, the system that solves ARC-AGI will have had no choice but to learn a new combination of skills along the way. The AI that beats this will have _generalized_ to a new set of skills outside of its training data.
+
+Importantly, ARC-AGI is easy for humans (because we have general intelligence), but hard for AI.
+
+If you haven't seen an ARC task before, check out [arcprize.org/play](https://arcprize.org/play).
+
+![ARC Task](public/images/arctask.png)
+_Can you spot the "rule" that maps the input to the output? (Hint: Where does the yellow fill in?)_ 
+
+The whole goal is to look at the 3 input/output "training" pairs, find the "rule" or "program" that turns the input into the output, and then apply that rule to the 4th "test" input. **Goal**: Correctly predict the test output.
+
+If you want to find out more about ARC-AGI, technical approaches, or how to compete for the prize, check out the [ARC Prize website](https://arcprize.org/guide).
+
+![ARC Prize Website](public/images/DwarkeshBehindTheScenes.png)
+_Behind the scenes of the Dwarkesh podcast_
+
+## How do you run an AI competition?
+
+So what goes into running an AI competition? Here's what the team and I have been up to:
+
+* **Website** - Bryan Landers did the amazing design and frontend work of the [ARC Prize website](https://arcprize.org/)
+* **Technical guide** - We put together a quick start [technical guide](https://arcprize.org/guide) for approaches, submitting to the competition, and data FAQs
+* **Data Management** - The [ARC-AGI dataset](https://github.com/fchollet/ARC-AGI) requires updating, cleaning
+* **Testing Latest** - People want to know how ARC-AGI does on new models
+* **Largest competition on Kaggle** - We partner with Kaggle to [run the competition](https://www.kaggle.com/competitions/arc-prize-2024). It's the largest one with over $1M and 10K submissions (and counting!)
+* **Public Leaderboard** - For submissions which aren't eligable for Kaggle, we work to validate, verify, and publish results. See [Ryan Greenblatt's](https://arcprize.org/leaderboard#arc-agi-pub) submission for an example
+* **Podcasts, videos, speaking** - We partner with podcasts to get the word out. Like [Dwarkesh](https://www.youtube.com/watch?v=UakqL6Pj9xo), [Machine Learning](https://www.youtube.com/watch?v=3ZTNps2PraM) [Street Talk](https://www.youtube.com/watch?v=s7_NlkBwdj8), [No Priors](https://www.youtube.com/watch?v=LFm_lSiMLm4)
+* **Community Management** - There is a large community of ARC-AGI competitors. We manage the [Discord](https://discord.gg/9b77dPAmcA), [Twitter](https://twitter.com/arcprize), [Kaggle](https://www.kaggle.com/organizations/arc), [YouTube](https://www.youtube.com/channel/UC_rdrp-QkrZn-ce9uCE-0EA), Newsletter and [Blog](https://arcprize.org/blog).
+* **Mindshare** - Blog posts about hot topics like [o1 testing](https://arcprize.org/blog/openai-o1-results-arc-prize)
+* **University Tour** - We've [toured the top AI programs](https://arcprize.org/tour) in the world with Mike & Francois to talk about the competition & ARC-AGI
+* **Analytics** - Treating our competition like a start up and analyzing the funnel
+
+![ARC Prize Analytics](public/images/ARCPrizeSubmissionsDash.png)
+_One of the ARC Prize Analytics Dashboards. Each dot is a submission on Kaggle._
+
+## What This Means for Me
+
+* **Mission Driven is fun** - I traditionally haven't done mission driven work in my career. It has been refreshing to join a non-profit and embrace the "open source work for humanity" angle. Having an alternative northstar (beside revenue) is nice.
+* **AI Theory Change Of Pace** - My AI work has typically spanned the API layer through customer value and applications. ARC Prize has been a nice change of pace to engage with AI's more fundamental concepts.
+* **Small teams are great** - After doing so much solo work, I re-realized how great it is being a part of a small team.
+
+But in the end, the thing that drives me is the potential for my contribution to ARC Prize to have a meaningful impact on the world. The solution to ARC-AGI won't be _proper_ AGI, but there will be an aspect of the solution might be the ["1-2 missing pieces"](https://x.com/tsarnick/status/1790489198136590756?s=46) of AGI.
+
+If you want to hear more about what is like to run a competition, collaborating with AI programs, or why ARC-AGI is a worthy AI benchmark, feel free to [reach out](https://gregkamradt.com/contact).

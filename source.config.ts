@@ -10,7 +10,7 @@ export const writing = defineCollections({
     schema: frontmatterSchema.extend({
       author: z.string(),
       date: z.coerce.date().transform(date => date.toISOString().split('T')[0]).optional(),
-      display: z.boolean().optional()
+      display: z.boolean().optional(),
     }),
     type: 'doc',
   });
