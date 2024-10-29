@@ -9,7 +9,7 @@ Founder @ [Leverage](https://leverage.to) - an AI Product & Education Studio.
 
 I have been working on a series of products, investments, clients, and operating with technology companies.
 
-I sent personal updates to my friends and family, you can get a copy of my notes [here](https://notes.gregkamradt.com).
+I sent personal updates to my friends and family, you can get a copy of my notes [here](https://mail.gregkamradt.com/).
 
 ## Projects
 1. [AI Education](https://github.com/gregkamradt/ai-education) - Open source and product content teaching developers how to build AI products.
