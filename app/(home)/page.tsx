@@ -5,15 +5,15 @@ import { DocsBody, DocsPage } from "fumadocs-ui/page";
 
 const content = `
 # Greg Kamradt
-Founder @ [Leverage](https://leverage.to) - an AI Product & Education Studio.
+President @ [ARC Prize Foundation](https://arcprize.org/) - A Northstar to AGI
 
-I have been working on a series of products, investments, clients, and operating with technology companies.
+I have been working on a series of products, investments, clients, and operating with application layer AI companies through [Leverage](https://leverage.to).
 
-I sent personal updates to my friends and family, you can get a copy of my notes [here](https://mail.gregkamradt.com/).
+I sent updates to my friends and family, you can get a copy [here](https://mail.gregkamradt.com/).
 
 ## Projects
 1. [AI Education](https://github.com/gregkamradt/ai-education) - Open source and product content teaching developers how to build AI products.
-2. [ARC Prize](https://arcprize.org/) - A $1M competition to open source a solution to [ARC-AGI](https://arcprize.org/arc).
+2. [Leverage](https://leverage.to) - An AI Product & Education Studio.
 3. [Needle In A Haystack](https://github.com/gkamradt/LLMTest_NeedleInAHaystack/tree/main) - Testing a LLMs ability to recall information from a long context.
 4. [Terra Mano](https://terramano.co/) - Hand crafted bronze maps of American terrain.
 5. [Writing](https://gregkamradt.com/blog) - Blog and posts
