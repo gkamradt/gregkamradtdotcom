@@ -12,7 +12,7 @@ I have been working on a series of products, investments, clients, and operating
 I sent updates to my friends and family, you can get a copy [here](https://mail.gregkamradt.com/).
 
 ## Projects
-1. [AI Education](https://github.com/gregkamradt/ai-education) - Open source and product content teaching developers how to build AI products.
+1. [AI Education](https://www.leverage.to/learn) - Open source and product content teaching developers how to build AI products.
 2. [Leverage](https://leverage.to) - An AI Product & Education Studio.
 3. [Needle In A Haystack](https://github.com/gkamradt/LLMTest_NeedleInAHaystack/tree/main) - Testing a LLMs ability to recall information from a long context.
 4. [Terra Mano](https://terramano.co/) - Hand crafted bronze maps of American terrain.
