@@ -16,7 +16,7 @@ I sent updates to my friends and family, you can get a copy [here](https://mail.
 2. [Leverage](https://leverage.to) - An AI Product & Education Studio.
 3. [Needle In A Haystack](https://github.com/gkamradt/LLMTest_NeedleInAHaystack/tree/main) - Testing a LLMs ability to recall information from a long context.
 4. [Terra Mano](https://terramano.co/) - Hand crafted bronze maps of American terrain.
-5. [Writing](https://gregkamradt.com/blog) - Blog and posts
+5. [Writing](https://gregkamradt.com/writing) - Blog and posts
 6. and [others](https://gregkamradt.com/projects)
 
 ## Around the web
