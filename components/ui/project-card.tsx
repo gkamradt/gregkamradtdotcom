@@ -16,6 +16,7 @@ export default function Component({
     tagline,
     description,
     link,
+    imagePosition,
 }: ProjectCardProps) {
     return (
         <Card className="overflow-hidden">
@@ -26,7 +27,7 @@ export default function Component({
                             src={imageUrl}
                             alt={title}
                             fill
-                            className="object-cover"
+                            className={`object-cover ${imagePosition === "top" ? "object-top" : imagePosition === "middle" ? "object-center" : "object-bottom"}`}
                         />
                     </div>
                     <CardContent className="flex-1 p-4 sm:p-6">

@@ -4,13 +4,15 @@ import ProjectCard from "@/components/ui/project-card";
 const projects = [
     {
         imageUrl: "/images/NeedleHaystack.png",
+        imagePosition: "top",
         title: "Needle In A Haystack",
         tagline: "Testing a LLMs ability to recall information from a long context.",
         description: "I created a benchmark to test how well LLMs can recall information from a long context window. It was tested on gpt-4o & claude-2.1",
-        link: "https://terramano.co/",
+        link: "https://x.com/gregkamradt/status/1722386725635580292",
     },
     {
         imageUrl: "/images/TerraMano.jpg",
+        imagePosition: "middle",
         title: "Terra Mano",
         tagline: "Handcrafted bronze maps of American terrain.",
         description: "In need of a physical project, I managed 3d printing, casting in bronze, and hand finishing maps of US mountains.",
@@ -18,10 +20,19 @@ const projects = [
     },
     {
         imageUrl: "/images/ChunkViz.png",
+        imagePosition: "top",
         title: "ChunkViz",
         tagline: "Visualizing different chunking strategies.",
         description: "LLMs do better with shorter context windows. I built a tool to visualize how different chunking strategies to help you pick the one that is best for your use case.",
-        link: "https://terramano.co/",
+        link: "https://chunkviz.up.railway.app/",
+    },
+    {
+        imageUrl: "/images/SnakeBench.png",
+        imagePosition: "top",
+        title: "SnakeBench",
+        tagline: "Benchmarking LLM through multi-headed snake games.",
+        description: "50 LLMs battle it out on Snake.",
+        link: "https://x.com/gregkamradt/status/1722386725635580292",
     },
 ];
 
