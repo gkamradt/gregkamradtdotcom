@@ -8,6 +8,7 @@ interface ProjectCardProps {
     tagline: string;
     description: string;
     link?: string;
+    imagePosition: "top" | "middle" | "bottom";
 }
 
 export default function Component({

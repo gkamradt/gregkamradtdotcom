@@ -1,7 +1,18 @@
 import ProjectCard from "@/components/ui/project-card";
 
+type ImagePosition = "top" | "middle" | "bottom";
+
+type Project = {
+    imageUrl: string;
+    imagePosition: ImagePosition;
+    title: string;
+    tagline: string;
+    description: string;
+    link: string;
+};
+
 // Sample project data (you can replace this with actual data fetching logic)
-const projects = [
+const projects: Project[] = [
     {
         imageUrl: "/images/NeedleHaystack.png",
         imagePosition: "top",
