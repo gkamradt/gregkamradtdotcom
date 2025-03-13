@@ -20,7 +20,7 @@ I sent updates to my friends and family, you can get a copy [here](https://mail.
 6. and [others](https://gregkamradt.com/projects)
 
 ## Around the web
-- GitHub: [@gregkamradt](https://github.com/gregkamradt)
+- GitHub: [@gregkamradt](https://github.com/gkamradt)
 - Twitter: [@gregkamradt](https://twitter.com/gregkamradt)
 - LinkedIn: [in/Greg Kamradt](https://www.linkedin.com/in/gregkamradt/)
 - YouTube: [@dataindependent](https://www.youtube.com/@dataindependent)
