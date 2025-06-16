@@ -45,6 +45,15 @@ const projects: Project[] = [
         description: "50 LLMs battle it out on Snake.",
         link: "https://x.com/gregkamradt/status/1722386725635580292",
     },
+    {
+        imageUrl: "/images/vibemore.png",
+        imagePosition: "top",
+        title: "I Vibe More Than You",
+        tagline: "If you don't have 85 terminals open, are you even vibing?",
+        description: "Meme site that allows you to open up as many vibe terminals you want.",
+        link: "https://www.ivibemorethanyou.com/"
+    }
+    
 ];
 
 export default function ProjectsPage() {
