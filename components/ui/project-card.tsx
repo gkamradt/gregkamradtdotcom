@@ -2,13 +2,43 @@ import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
 import Link from "next/link";
 
+type LegacyPosition = "top" | "middle" | "bottom";
+
+type ImagePosition = {
+    // Percentages from 0 to 100. Defaults to center (50, 50)
+    x?: number;
+    y?: number;
+    // Multiplier, where 1 = 100% (no zoom). Defaults to 1.
+    zoom?: number;
+};
+
 interface ProjectCardProps {
     imageUrl: string;
     title: string;
     tagline: string;
     description: string;
     link?: string;
-    imagePosition: "top" | "middle" | "bottom";
+    // Support both the new granular object and the legacy string positions
+    imagePosition?: ImagePosition | LegacyPosition;
+}
+
+function clamp(num: number, min: number, max: number) {
+    return Math.min(Math.max(num, min), max);
+}
+
+function normalizePosition(pos?: ImagePosition | LegacyPosition) {
+    if (!pos) {
+        return { x: 50, y: 50, zoom: 1 };
+    }
+    if (typeof pos === "string") {
+        // Legacy mapping
+        const y = pos === "top" ? 0 : pos === "middle" ? 50 : 100;
+        return { x: 50, y, zoom: 1 };
+    }
+    const x = pos.x ?? 50;
+    const y = pos.y ?? 50;
+    const zoom = pos.zoom ?? 1;
+    return { x: clamp(x, 0, 100), y: clamp(y, 0, 100), zoom: Math.max(zoom, 0.01) };
 }
 
 export default function Component({
@@ -19,6 +49,7 @@ export default function Component({
     link,
     imagePosition,
 }: ProjectCardProps) {
+    const { x, y, zoom } = normalizePosition(imagePosition);
     return (
         <Card className="overflow-hidden">
             <Link href={link || ""}>
@@ -28,7 +59,13 @@ export default function Component({
                             src={imageUrl}
                             alt={title}
                             fill
-                            className={`object-cover ${imagePosition === "top" ? "object-top" : imagePosition === "middle" ? "object-center" : "object-bottom"}`}
+                            className="object-cover"
+                            // Use objectPosition to shift X/Y and transform scale for zoom
+                            style={{
+                                objectPosition: `${x}% ${y}%`,
+                                transform: `scale(${zoom})`,
+                                transformOrigin: "center",
+                            }}
                         />
                     </div>
                     <CardContent className="flex-1 p-4 sm:p-6">
