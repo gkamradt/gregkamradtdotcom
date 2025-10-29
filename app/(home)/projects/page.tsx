@@ -64,6 +64,14 @@ const projects: Project[] = [
         tagline: "A radar view of agents completing work in parallel.",
         description: "A UX exploration combining radar charts and agentic work.",
         link: "https://www.agenttrafficcontrol.com/"
+    },
+    {
+        imageUrl: "/images/tbpnlimited.png",
+        imagePosition: { x: 55, y: 55, zoom: 1 },
+        title: "TBPN Limited",
+        tagline: "Physical Technology Trading Cards",
+        description: "Phsyical trading cards based off of popular TBPN moments",
+        link: "https://www.tbpnlimited.com/"
     }
     
 ];
