@@ -36,10 +36,10 @@ export default function Page(): React.ReactElement {
         }}
       >
         <h1 className="mb-4 border-b-4 border-fd-foreground pb-2 text-4xl font-bold md:text-5xl">
-          Writings
+          Writing
         </h1>
         <p className="text-sm md:text-base">
-          Writings by Greg Kamradt
+          Writing by Greg Kamradt
         </p>
       </div>
       <div className="grid grid-cols-1 border md:grid-cols-3 lg:grid-cols-4">
