@@ -28,7 +28,7 @@ I sent updates to my friends and family, you can get a copy [here](https://mail.
 
 export default function HomePage() {
     return (
-        <main className="mx-auto flex size-full max-w-container flex-row items-center gap-6 px-4 py-8">
+        <main className="container mx-auto flex size-full flex-row items-center gap-6 px-4 py-8">
             <DocsBody>
                 <MDXRemote
                     source={content}

@@ -1,13 +1,9 @@
 import "./global.css";
-import { RootProvider } from "fumadocs-ui/provider";
+import { RootProvider } from "fumadocs-ui/provider/next";
 import { Inter } from "next/font/google";
-import type { ReactNode } from "react";
+import { type ReactNode, Suspense } from "react";
 import { PHProvider } from "./providers";
-import dynamic from "next/dynamic";
-
-const PostHogPageView = dynamic(() => import("./PostHogPageView"), {
-    ssr: false,
-});
+import PostHogPageView from "./PostHogPageView";
 
 const inter = Inter({
     subsets: ["latin"],
@@ -18,7 +14,9 @@ export default function Layout({ children }: { children: ReactNode }) {
         <html lang="en" className={inter.className} suppressHydrationWarning>
             <PHProvider>
                 <body>
-                    <PostHogPageView />
+                    <Suspense fallback={null}>
+                        <PostHogPageView />
+                    </Suspense>
                     <RootProvider>{children}</RootProvider>
                 </body>
             </PHProvider>

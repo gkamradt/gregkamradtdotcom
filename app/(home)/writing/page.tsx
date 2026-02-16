@@ -6,8 +6,8 @@ export default function Page(): React.ReactElement {
   .filter((post) => post.data.display !== false)
   .sort(
     (a, b) =>
-      new Date(b.data.date ?? b.file.name).getTime() -
-      new Date(a.data.date ?? a.file.name).getTime(),
+      new Date(b.data.date ?? b.slugs[0]).getTime() -
+      new Date(a.data.date ?? a.slugs[0]).getTime(),
   );
 
   const svg = `<svg viewBox='0 0 500 500' xmlns='http://www.w3.org/2000/svg'>
@@ -23,7 +23,7 @@ export default function Page(): React.ReactElement {
 </svg>`;
 
   return (
-    <main className="container max-sm:px-0 md:py-12">
+    <main className="container mx-auto max-sm:px-0 md:py-12">
       <div
         className="h-[200px] p-8 md:h-[300px] md:p-12"
         style={{
@@ -55,7 +55,7 @@ export default function Page(): React.ReactElement {
             </p>
 
             <p className="mt-auto pt-4 text-xs text-fd-muted-foreground">
-              {new Date(post.data.date ?? post.file.name).toDateString()}
+              {new Date(post.data.date ?? post.slugs[0]).toDateString()}
             </p>
           </Link>
         ))}

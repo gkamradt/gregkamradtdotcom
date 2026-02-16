@@ -1,4 +1,4 @@
-import { type HomeLayoutProps } from 'fumadocs-ui/home-layout';
+import { type HomeLayoutProps } from 'fumadocs-ui/layouts/home';
 
 export const baseOptions: HomeLayoutProps = {
   nav: {

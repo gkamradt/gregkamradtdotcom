@@ -1,0 +1,3 @@
+[  159583ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/__nextjs_font/geist-latin.woff2:0
+[  160197ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr?id=jOF_YYpCWnRe5E957i5ra' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/0d356_next_dist_client_0114cb70._.js:10878
+[  161200ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr?id=jOF_YYpCWnRe5E957i5ra' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/0d356_next_dist_client_0114cb70._.js:10878

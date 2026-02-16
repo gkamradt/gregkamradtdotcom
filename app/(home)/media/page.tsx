@@ -30,7 +30,7 @@ A collection of media I've either authored or been a part of.
 
 export default function MediaPage() {
     return (
-        <main className="mx-auto flex size-full max-w-container flex-row items-center gap-6 px-4 py-8">
+        <main className="container mx-auto flex size-full flex-row items-center gap-6 px-4 py-8">
             <DocsBody>
                 <MDXRemote
                     source={content}
