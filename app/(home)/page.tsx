@@ -9,7 +9,7 @@ President @ [ARC Prize Foundation](https://arcprize.org/) - A Northstar to AGI
 
 I have been working on a series of products, investments, clients, and operating with application layer AI companies through [Leverage](https://leverage.to).
 
-I sent updates to my friends and family, you can get a copy [here](https://mail.gregkamradt.com/).
+I sent updates to my friends and family, you can get a copy [here](https://forms.gle/dN6G95f9cFQESBpg8).
 
 ## Projects
 1. [AI Education](https://www.leverage.to/learn) - Open source and product content teaching developers how to build AI products.
