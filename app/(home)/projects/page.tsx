@@ -72,6 +72,14 @@ const projects: Project[] = [
         tagline: "Physical Technology Trading Cards",
         description: "Phsyical trading cards based off of popular TBPN moments",
         link: "https://www.tbpnlimited.com/"
+    },
+    {
+        imageUrl: "/images/agnts.png",
+        imagePosition: { x: 50, y: 50, zoom: 1 },
+        title: "agnts.sh",
+        tagline: "Plain-text links for agents.",
+        description: "A link service built for agents. Every URL serves three response shapes from the same endpoint - an HTML stub for humans, raw markdown for agents, and full JSON - based on the request's Accept header. Skip the scraping, just hand your agent a link.",
+        link: "https://agnts.sh/"
     }
     
 ];
