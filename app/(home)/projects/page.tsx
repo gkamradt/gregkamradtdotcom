@@ -80,6 +80,14 @@ const projects: Project[] = [
         tagline: "Plain-text links for agents.",
         description: "A link service built for agents. Every URL serves three response shapes from the same endpoint - an HTML stub for humans, raw markdown for agents, and full JSON - based on the request's Accept header. Skip the scraping, just hand your agent a link.",
         link: "https://agnts.sh/"
+    },
+    {
+        imageUrl: "/images/InterAuth.png",
+        imagePosition: { x: 50, y: 30, zoom: 1 },
+        title: "InterAuth",
+        tagline: "Give your AI agent scoped read access to a Google Doc in 30 seconds.",
+        description: "A pass-through broker that hands your agent a disposable, read-only share address for Google Docs. No OAuth, no install, no signup - share a Doc, revoke anytime, just like with a colleague.",
+        link: "https://interauth.dev/"
     }
     
 ];
