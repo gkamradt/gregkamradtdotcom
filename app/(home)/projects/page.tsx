@@ -88,6 +88,14 @@ const projects: Project[] = [
         tagline: "Give your AI agent scoped read access to a Google Doc in 30 seconds.",
         description: "A pass-through broker that hands your agent a disposable, read-only share address for Google Docs. No OAuth, no install, no signup - share a Doc, revoke anytime, just like with a colleague.",
         link: "https://interauth.dev/"
+    },
+    {
+        imageUrl: "/images/ReadSide.png",
+        imagePosition: { x: 45, y: 45, zoom: 1 },
+        title: "ReadSide",
+        tagline: "A reader for people who actually want to understand.",
+        description: "Paste any article URL for a clean, distraction-free reading view, then highlight any passage to start a threaded chat about that exact section.",
+        link: "https://readside.dev/"
     }
     
 ];

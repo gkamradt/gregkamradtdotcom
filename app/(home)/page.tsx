@@ -17,8 +17,9 @@ I sent updates to my friends and family, you can get a copy [here](https://forms
 3. [Needle In A Haystack](https://github.com/gkamradt/LLMTest_NeedleInAHaystack/tree/main) - Testing a LLMs ability to recall information from a long context.
 4. [Terra Mano](https://terramano.co/) - Hand crafted bronze maps of American terrain.
 5. [agnts.sh](https://agnts.sh/) - Plain-text links for agents. Same URL serves humans, markdown, and JSON based on the Accept header.
-6. [Writing](https://gregkamradt.com/writing) - Blog and posts
-7. and [others](https://gregkamradt.com/projects)
+6. [ReadSide](https://readside.dev/) - A reader for people who actually want to understand. Highlight a passage to chat with that section.
+7. [Writing](https://gregkamradt.com/writing) - Blog and posts
+8. and [others](https://gregkamradt.com/projects)
 
 ## Around the web
 - GitHub: [@gregkamradt](https://github.com/gkamradt)
