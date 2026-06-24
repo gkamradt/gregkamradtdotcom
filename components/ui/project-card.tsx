@@ -54,7 +54,7 @@ export default function Component({
         <Card className="overflow-hidden">
             <Link href={link || ""}>
                 <div className="flex flex-col sm:flex-row">
-                    <div className="relative w-full sm:w-1/3 h-48 sm:h-auto">
+                    <div className="relative w-full sm:w-1/3 h-48 sm:h-auto overflow-hidden">
                         <Image
                             src={imageUrl}
                             alt={title}
