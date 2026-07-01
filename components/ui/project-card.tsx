@@ -18,8 +18,20 @@ interface ProjectCardProps {
     tagline: string;
     description: string;
     link?: string;
+    // ISO date string (e.g. "2024-01" or "2024-01-15")
+    date?: string;
     // Support both the new granular object and the legacy string positions
     imagePosition?: ImagePosition | LegacyPosition;
+}
+
+function formatDate(date?: string) {
+    if (!date) return null;
+    // Support "YYYY-MM" and "YYYY-MM-DD"
+    const parts = date.split("-").map((p) => parseInt(p, 10));
+    const [year, month] = parts;
+    if (!year || !month) return date;
+    const d = new Date(year, month - 1);
+    return d.toLocaleDateString("en-US", { month: "short", year: "numeric" });
 }
 
 function clamp(num: number, min: number, max: number) {
@@ -47,9 +59,11 @@ export default function Component({
     tagline,
     description,
     link,
+    date,
     imagePosition,
 }: ProjectCardProps) {
     const { x, y, zoom } = normalizePosition(imagePosition);
+    const formattedDate = formatDate(date);
     return (
         <Card className="overflow-hidden">
             <Link href={link || ""}>
@@ -69,7 +83,14 @@ export default function Component({
                         />
                     </div>
                     <CardContent className="flex-1 p-4 sm:p-6">
-                        <h2 className="text-2xl font-bold mb-2">{title}</h2>
+                        <div className="flex items-start justify-between gap-4 mb-2">
+                            <h2 className="text-2xl font-bold">{title}</h2>
+                            {formattedDate && (
+                                <span className="shrink-0 text-xs text-muted-foreground whitespace-nowrap mt-1">
+                                    {formattedDate}
+                                </span>
+                            )}
+                        </div>
                         <p className="text-sm text-muted-foreground mb-3">
                             {tagline}
                         </p>
