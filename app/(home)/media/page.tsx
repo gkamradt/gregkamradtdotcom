@@ -14,6 +14,14 @@ A collection of media I've either authored or been a part of.
 
 **Appearances:**
 
+* 4/9/2026 - [Presentation] [ARC-AGI-3](https://www.youtube.com/watch?v=f_xT45Pi0UQ)
+* 12/17/2025 - [Interview] [How Intelligent Is AI, Really?](https://www.youtube.com/watch?v=pBlIgs6w7Ss)
+* 10/23/2025 - [Conference] [ARC-AGI-3 and Action Efficiency | ARC Prize @ MIT](https://www.youtube.com/watch?v=bqNfIHedb3g)
+* 10/8/2025 - [Conference] [Measuring Agents With Interactive Evaluations | OpenAI DevDay](https://www.youtube.com/watch?v=TK9MN22q6E0)
+* 8/11/2025 - [Presentation] [Interactive Reasoning Benchmarks | ARC-AGI-3 Preview](https://www.youtube.com/watch?v=3T4OwBp6d90)
+* 7/16/2025 - [Conference] [Measuring AGI: Interactive Reasoning Benchmarks for ARC-AGI-3 | AI Engineer World's Fair](https://www.youtube.com/watch?v=3XmFPwjG8pg)
+* 7/4/2025 - [Conference] [ARC Prize - Measuring AGI | Arize:Observe](https://www.youtube.com/watch?v=M6bvsq2h6sk)
+* 12/20/2024 - [Livestream] [OpenAI o3 and o3-mini - 12 Days of OpenAI: Day 12](https://www.youtube.com/watch?v=SKBG1sqdyIU&t=304s)
 * 3/27/2024 - [Podcast] [How Businesses Are Using AI Right Now with Greg Kamradt](https://www.youtube.com/watch?v=KGhRxDgTaUw) 
 * 2/14/2024 - [Meetup] [Evaluating LLMs: Needle in a Haystack](https://lu.ma/llm-haystack?hss_channel=lcp-28464994&utm_content=281011090&utm_medium=social&utm_source=linkedin) ([Video](https://youtu.be/aswbFKE_0Dg?t=2228))
 * 11/23/2023 - [Podcast] [Building Defensible AI Apps // Gregory Kamradt @DataIndependent // MLOps Podcast #191](https://www.youtube.com/watch?v=oYb1SbVVnYI)
