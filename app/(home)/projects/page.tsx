@@ -112,6 +112,15 @@ const projects: Project[] = [
         link: "https://readside.dev/",
         date: "2026-06-19",
     },
+    {
+        imageUrl: "/images/RunReq.png",
+        imagePosition: { x: 50, y: 50, zoom: 1 },
+        title: "RunReq",
+        tagline: "Live hiring intelligence for frontier AI.",
+        description: "A hiring monitor that turns frontier AI job boards into analysis of current hiring activity and historical changes over time.",
+        link: "https://runreq.com/",
+        date: "2026-08-17",
+    },
 ];
 
 type SortOrder = "newest" | "oldest";
